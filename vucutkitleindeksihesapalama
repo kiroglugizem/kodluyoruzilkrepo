@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+    double kilo, boy, bmi;
+
+        System.out.print("Boy giriniz (m) : ");
+        boy = input.nextDouble();
+
+        System.out.print("Kilo giriniz (kg) : ");
+        kilo = input.nextDouble();
+
+        bmi = kilo / (boy * boy);
+    System.out.println("BMI : " + bmi);
+
+
+    }
+}
