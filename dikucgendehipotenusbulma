@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+    double a, b, c;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("a kenarınun uzunluğunu giriniz: ");
+        a = input.nextDouble();
+
+        System.out.print("b kenarının uzunluğunu giriniz: ");
+        b = input.nextDouble();
+
+        c= Math.sqrt((a*a)+(b*b));
+
+        System.out.print("Hipotenüs: " + c);
+        
+
+    }
+}
