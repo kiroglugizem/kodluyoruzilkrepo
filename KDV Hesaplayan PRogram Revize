@@ -1,0 +1,25 @@
+import java.util.Scanner;
+        //Kullanıcıdan bir değer almamız gerek.
+public class Main {
+    public static void main(String[] args) {
+        //Ekrana yazdırılacakları girelim. Değişkenlerimizi tanımlayalım.
+
+        double x;
+
+        //Scanner sınıfımızı tanımlayalım.
+
+        Scanner input = new Scanner (System.in);
+
+        System.out.println("Ürünün Fiyatı : ");
+        x = input.nextInt();
+
+        double y = x / 100 * 18;
+
+        System.out.println("KDV %18 : " + y);
+
+        double z = x + y;
+
+        System.out.println("KDV dâhil fiyatı: " + z);
+
+    }
+}
