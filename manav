@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner input = new Scanner(System.in);
+
+        double armutPrice= 2.14;
+        double elmaPrice = 3.67;
+        double domatesPrice = 1.11;
+        double muzPrice = 0.95;
+        double patlicanPrice = 5.00;
+        double armutTotal, elmaTotal, domatesTotal, muzTotal, patlicanTotal;
+        double armutKg, elmaKg, domatesKg, muzKg, patlicanKg;
+
+        System.out.print("Armut KG:");
+        armutKg = input.nextDouble();
+        System.out.print("Elma KG:");
+        elmaKg = input.nextDouble();
+        System.out.print("Domates KG:");
+        domatesKg = input.nextDouble();
+        System.out.print("Muz KG:");
+        muzKg = input.nextDouble();
+        System.out.print("Patlican KG:");
+        patlicanKg = input.nextDouble();
+
+        armutTotal = armutKg*armutPrice;
+        elmaTotal = elmaKg*elmaPrice;
+        domatesTotal = domatesKg*domatesPrice;
+        muzTotal = muzKg*muzPrice;
+        patlicanTotal = patlicanKg*patlicanPrice;
+
+        double total = armutTotal + elmaTotal + domatesTotal + muzTotal + patlicanTotal;
+
+        System.out.print("Toplam Tutar: " + total + "TL");
+
+
+
+    }
+}
